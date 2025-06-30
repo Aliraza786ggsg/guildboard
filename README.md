@@ -94,7 +94,7 @@ export const environment = {
 
 ## Contributing
 
-See [[CONTRIBUTING.md](CONTRIBUTING.md)](https://github.com/TomasPlatero/guildboard/wiki/Contribution-Guide) for guidelines and code standards.
+See the [Contribution Guide](https://github.com/TomasPlatero/guildboard/wiki/Contribution-Guide) in the wiki for guidelines and code standards.
 
 ## Security
 
