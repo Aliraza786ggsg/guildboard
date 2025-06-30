@@ -2,7 +2,7 @@
 
 **GuildBoard** is a modern, scalable frontend application built with Angular for managing and displaying World of Warcraft guild data in real time.
 
-![GuildBoard Preview](https://via.placeholder.com/800x200?text=GuildBoard+Dashboard)
+![GuildBoard Preview](https://placehold.co/800x200?text=GuildBoard+Dashboard)
 
 ## Table of Contents
 
