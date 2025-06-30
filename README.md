@@ -1,8 +1,16 @@
 # GuildBoard
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/TomasPlatero/guildboard/eslint.yml?branch=master\&label=ESLint)](https://github.com/TomasPlatero/guildboard/actions)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/TomasPlatero/guildboard/codeql-analysis.yml?branch=master\&label=CodeQL)](https://github.com/TomasPlatero/guildboard/actions)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen)](https://github.com/TomasPlatero/guildboard/security/dependabot)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/TomasPlatero/guildboard)](https://github.com/TomasPlatero/guildboard/issues)
+
+# GuildBoard
+
 **GuildBoard** is a modern, scalable frontend application built with Angular for managing and displaying World of Warcraft guild data in real time.
 
-![GuildBoard Preview](https://placehold.co/800x200?text=GuildBoard+Dashboard)
+![GuildBoard Preview](https://via.placeholder.com/800x200?text=GuildBoard+Dashboard)
 
 ## Table of Contents
 
